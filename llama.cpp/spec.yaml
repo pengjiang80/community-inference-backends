@@ -1,4 +1,9 @@
 backend_name: llama.cpp
+description: |
+  llama.cpp (https://github.com/ggml-org/llama.cpp) is a lightweight, high-performance inference engine for running large language models locally.
+  It focuses on efficient CPU and edge deployment with minimal dependencies, supporting quantization and broad hardware compatibility.
+  It enables fast, low-cost LLM inference without requiring GPUs or complex infrastructure.
+  Only models in the GGUF format are supported.
 version_configs:
   cuda:
     image_name: ghcr.io/ggml-org/llama.cpp:server-cuda

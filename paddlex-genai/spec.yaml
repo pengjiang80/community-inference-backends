@@ -1,4 +1,4 @@
-backend_name: paddlex-genai
+backend_name: PaddleX-GenAI
 version_configs:
   latest:
     image_name: ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddlex-genai-vllm-server:latest

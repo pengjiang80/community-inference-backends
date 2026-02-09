@@ -1,4 +1,7 @@
-backend_name: text-embeddings-inference
+backend_name: Text-Embeddings-Inference
+description: |
+  TEI (Text Embeddings Inference) is a high-performance engine by Hugging Face specifically optimized for deploying embedding and reranking models on CUDA or CPU.
+  It is the definitive choice for RAG production environments, offering ultra-low latency and superior throughput compared to general LLM frameworks like vLLM or llama.cpp.
 version_configs:
   cpu-1.8:
     image_name: ghcr.io/huggingface/text-embeddings-inference:cpu-1.8
