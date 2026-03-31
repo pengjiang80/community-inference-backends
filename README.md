@@ -47,11 +47,12 @@ The following community backends are currently available:
   - [llama.cpp](https://github.com/ggml-org/llama.cpp)
 
 - **Vision / OCR**
-  - [mineru](https://github.com/opendatalab/MinerU) [Docs](https://opendatalab.github.io/MinerU/)
+  - [MinerU](https://github.com/opendatalab/MinerU) [Docs](https://opendatalab.github.io/MinerU/)
   - [paddlex-genai](https://github.com/PaddlePaddle/PaddleX) [Docs](https://www.paddleocr.ai/main/version3.x/pipeline_usage/PaddleOCR-VL.html)
 
 - **Embedding / Reranker / Sequence Classification**
   - [text-embeddings-inference](https://github.com/huggingface/text-embeddings-inference) [Docs](https://huggingface.co/docs/text-embeddings-inference/index)
+  - [mis-tei](https://www.hiascend.com/developer/ascendhub/detail/07a016975cc341f3a5ae131f2b52399d)
 
 - **Audio**
   - Text-to-Speech

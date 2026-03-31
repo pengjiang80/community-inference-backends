@@ -7,8 +7,6 @@ description: |
   https://github.com/opendatalab/MinerU/blob/master/docker/global/Dockerfile
 
   The backend image includes a built-in model, so the model selected on the Deployments page may be ignored.
-
-  The model name must be set to: mineru
 health_check_path: /v1/models
 default_run_command: mineru-vllm-server --port {{port}} --served-model-name {{model_name}}
 version_configs:
