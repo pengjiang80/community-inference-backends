@@ -1,5 +1,7 @@
 # MinerU Custom Backend
 
+> View the latest version in [spec.yaml](spec.yaml)
+
 MinerU offers various official [Dockerfiles](https://github.com/opendatalab/MinerU/blob/master/docker/china) tailored for different hardware setups. We can use the relevant one to build an image and seamlessly integrate it into GPUStack as a custom backend.
 
 ## 1. Prepare MinerU Image
