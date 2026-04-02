@@ -1,28 +1,49 @@
 backend_name: Text-Embeddings-Inference
 description: |
   TEI (Text Embeddings Inference) is a high-performance engine by Hugging Face specifically optimized for deploying embedding and reranking models on CUDA or CPU.
+
   It is the definitive choice for RAG production environments, offering ultra-low latency and superior throughput compared to general LLM frameworks like vLLM or llama.cpp.
-version_configs:
-  cpu-1.8:
-    image_name: ghcr.io/huggingface/text-embeddings-inference:cpu-1.8
-    custom_framework: cpu
-  cuda-sm89-1.8:
-    image_name: ghcr.io/huggingface/text-embeddings-inference:89-1.8
-    custom_framework: cuda
-  cuda-sm86-1.8:
-    image_name: ghcr.io/huggingface/text-embeddings-inference:86-1.8
-    custom_framework: cuda
-  cuda-sm80-1.8:
-    image_name: ghcr.io/huggingface/text-embeddings-inference:1.8
-    custom_framework: cuda
-default_version: cpu-1.8
-default_run_command: --model-id {{model_path}} --port {{port}}
-is_built_in: false
 health_check_path: /health
+default_run_command: '--model-id {{model_path}} --port {{port}}'
+is_built_in: false
+version_configs:
+  CPU-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:cpu-1.9
+    custom_framework: cpu
+  CUDA-Turing-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:turing-1.9
+    custom_framework: cuda
+  CUDA-Ampere-sm80-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:1.9
+    custom_framework: cuda
+  CUDA-Ampere-sm86-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:86-1.9
+    custom_framework: cuda
+  CUDA-Ada-sm89-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:89-1.9
+    custom_framework: cuda
+  CUDA-Hopper-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:hopper-1.9
+    custom_framework: cuda
+  CUDA-Blackwell-sm100-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:100-1.9
+    custom_framework: cuda
+  CUDA-Blackwell-sm120-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:120-1.9
+    custom_framework: cuda
+  CUDA-Blackwell-sm121-1.9:
+    image_name: ghcr.io/huggingface/text-embeddings-inference:121-1.9
+    custom_framework: cuda
+default_version: CPU-1.9
 framework_index_map:
   cpu:
-    - cpu-1.8
+    - CPU-1.9
   cuda:
-    - cuda-sm80-1.8
-    - cuda-sm86-1.8
-    - cuda-sm89-1.8
+    - CUDA-Hopper-1.9
+    - CUDA-Turing-1.9
+    - CUDA-Ampere-sm80-1.9
+    - CUDA-Ampere-sm86-1.9
+    - CUDA-Ada-sm89-1.9
+    - CUDA-Blackwell-sm100-1.9
+    - CUDA-Blackwell-sm120-1.9
+    - CUDA-Blackwell-sm121-1.9

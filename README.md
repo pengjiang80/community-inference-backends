@@ -48,15 +48,15 @@ The following community backends are currently available:
 
 - **Vision / OCR**
   - [MinerU](https://github.com/opendatalab/MinerU) [Docs](https://opendatalab.github.io/MinerU/)
-  - [paddlex-genai](https://github.com/PaddlePaddle/PaddleX) [Docs](https://www.paddleocr.ai/main/version3.x/pipeline_usage/PaddleOCR-VL.html)
+  - [PaddleX-GenAI-Server](https://github.com/PaddlePaddle/PaddleX) [Docs](https://www.paddleocr.ai/main/version3.x/pipeline_usage/PaddleOCR-VL.html)
 
 - **Embedding / Reranker / Sequence Classification**
-  - [text-embeddings-inference](https://github.com/huggingface/text-embeddings-inference) [Docs](https://huggingface.co/docs/text-embeddings-inference/index)
+  - [Text-Embeddings-Inference](https://github.com/huggingface/text-embeddings-inference) [Docs](https://huggingface.co/docs/text-embeddings-inference/index)
   - [mis-tei](https://www.hiascend.com/developer/ascendhub/detail/07a016975cc341f3a5ae131f2b52399d)
 
 - **Audio**
   - Text-to-Speech
-    - [kokoro](https://github.com/hexgrad/kokoro)
+    - [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI)
 
 ---
 
