@@ -34,4 +34,5 @@ jobs:
 
             💡 **Dynamic update, simply merge before the next release.**
           branch: chore/auto-update-backends
+          delete-branch: true
           base: main
