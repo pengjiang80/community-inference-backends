@@ -26,11 +26,11 @@ jobs:
         with:
           token: ${{ secrets.GP_PAT }}
           push-to-fork: foyoux/gpustack
-          add-paths: assets/community-inference-backends.yaml
+          add-paths: gpustack/assets/community-inference-backends.yaml
           commit-message: "chore: update community-inference-backends"
           title: "chore: auto update community-inference-backends"
           body: |
-            Auto-generated PR to update `assets/community-inference-backends.yaml` from the latest upstream changes.
+            Auto-generated PR to update `gpustack/assets/community-inference-backends.yaml` from the latest upstream changes.
 
             💡 **Dynamic update, simply merge before the next release.**
           branch: chore/auto-update-backends
