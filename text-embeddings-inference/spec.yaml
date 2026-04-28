@@ -4,7 +4,7 @@ description: |
 
   It is the definitive choice for RAG production environments, offering ultra-low latency and superior throughput compared to general LLM frameworks like vLLM or llama.cpp.
 health_check_path: /health
-default_run_command: '--model-id {{model_path}} --port {{port}}'
+default_run_command: '--model-id {{model_path}} --port {{port}} --served-model-name {{model_name}}'
 is_built_in: false
 version_configs:
   CPU-1.9:
