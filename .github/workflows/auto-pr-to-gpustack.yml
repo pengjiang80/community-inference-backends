@@ -1,9 +1,14 @@
 name: Auto PR to gpustack
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+    paths:
+      - '*/logo.png'
+      - '*/spec.yml'
+      - '*/spec.yaml'
 
 concurrency:
   group: auto-pr-to-gpustack-main
